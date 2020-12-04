@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Work on object_list -->
+    <!-- Not Work on student_list -->
+    <!-- When context_object_name over write -->
+    {% for student in students %}
+    {{student.name}}
+    {{student.roll}}
+    {{student.course}} <br>
+    {% endfor %}   
+</body>
+</html>

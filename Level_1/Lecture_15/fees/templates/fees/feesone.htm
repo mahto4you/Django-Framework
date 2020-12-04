@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="{% static 'fees/css/style.css'%}"/>
+</head>
+<body>
+    <h2>{{cname}} Fees: {{charge}}</h2>
+    <img src="{% static 'fees/images/cd.jpg'%}" alt="Django" />
+    <img src="{% get_static_prefix %}fees/images/cf.jpg" alt="Dj"/>
+
+</body>
+</html>

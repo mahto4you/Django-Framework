@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="{% static 'course/css/style.css'%}"/>
+    <style>
+        body{
+            background-image: url("{% static 'course/images/banner.jpg'%}");
+            background-position: center top;
+            background-size: 400px;
+            background-size: contain;
+          background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <h2>Start Learning {{cname}}</h2>
+    <!-- <a href="{% static 'course/songs/saj.mp3'%}">Click_here</a> -->
+    <!-- <img src="{% static 'course/images/cod.jpg'%}" alt="Django" /> -->
+    <a href="{% static 'course/videos/ghj.mp4'%}">Click_here</a>
+    <img src="{% get_static_prefix %}course/images/code.jpg" alt="Dj"/>
+</body>
+</html>

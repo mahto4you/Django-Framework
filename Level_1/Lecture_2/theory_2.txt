@@ -1,0 +1,16 @@
+# How to create Django Application?
+  code: cd project_name
+  code: python manage.py startapp application_name 
+
+# How to install App in Django?
+  $_1- Go to Project_Directory
+  $_2- Open setting.py file...
+  $_3- INSTALLED_APPS = [
+      'django.contrib.admin',
+      'django.contrib.auth',
+      'django.contrib.contenttypes',
+      'django.contrib.sessions',
+      'django.contrib.messages',
+      'django.contrib.staticfiles',
+      'course',
+      ]

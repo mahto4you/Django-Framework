@@ -1,0 +1,29 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block content %} 
+<div class="mt-5 text-center">
+    <img src="{% static 'core/images/nitish.jpg' %}" alt="ProfilePic"
+    class="img-thumbnail" width="200px" height="110px">
+</div>
+<div class="mt-5 text-white mx-5 text-justify">
+    <h1 class="font-weigth-bold st-font">
+        Hello,
+    </h1>
+    <div class="px-4">
+        <p>
+            Nitish Kumar  is a founder of SoftwareTestingMaterial.
+             He is a certified Software Test Engineer by profession and blogger & youtuber by choice. 
+             He has an extensive experience in the field of Software Testing. 
+             He writes here about Software Testing which includes both Manual and Automation Testing. 
+             He loves to be with his wife and cute little kid 'Freedom'.
+        </p>
+    </div>
+    <div class="text-center">
+        <a href="{% url 'contact' %}" class="btn btn-outline-warning my-3 mr-5">Hire Me</a>
+    <a href="{% url 'contact' %}" class="btn btn-outline-info my-3">Contact</a>
+    </div>
+    
+
+</div>
+
+{% endblock content %}
